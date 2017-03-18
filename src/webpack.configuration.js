@@ -38,6 +38,12 @@ export default {
       }
     ]
   },
+  plugins: [
+    new (require('webpack').optimize.CommonsChunkPlugin)({
+      name: 'node_modules',
+      minChunks: module => module.context && module.context.indexOf('node_modules') !== -1,
+    })
+  ],
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, './dist')
