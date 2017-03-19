@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import style from './style.css';
+import 'font-awesome/css/font-awesome.css';
 
 const app = <div className={style.greetings}>Hello, World!</div>;
 

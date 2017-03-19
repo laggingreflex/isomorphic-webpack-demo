@@ -35,6 +35,10 @@ export default {
           'resolve-url-loader'
         ],
         test: /\.css$/
+      },
+      {
+        loader: 'url-loader',
+        test: /\.(png|woff|woff2|eot|ttf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
       }
     ]
   },
