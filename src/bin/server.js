@@ -32,6 +32,7 @@ const {
   createCompilationPromise,
   evalBundleCode
 } = createIsomorphicWebpack(webpackConfiguration, {
+  nodeExternalsWhitelist: [/.css$/],
   useCompilationPromise: true
 });
 
